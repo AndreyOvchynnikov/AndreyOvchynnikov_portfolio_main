@@ -1,0 +1,69 @@
+.section {
+    background-color: #fff;
+    padding: 15rem 0;
+}
+.content {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+.image {
+    position: relative;
+}
+.emoji {
+    bottom: 35px;
+    position: absolute;
+    right: 98px;
+    width: 6rem!important;
+    z-index: 10;
+}
+.mainImage {
+    border-radius: 1.7rem;
+    height: 35rem;
+    width: 41rem;
+}
+.image span {
+    background-color: #fff;
+    border-radius: 50%;
+    bottom: -33px;
+    height: 19rem;
+    position: absolute;
+    right: 33px;
+    width: 19rem;
+}
+.image span img {
+    animation: rotate 9s linear infinite;
+    width: 19rem;
+}
+@keyframes rotate {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+.text {
+    padding-right: 1.5rem;
+}
+.text h3 {
+    color: #147efb;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+.text h4 {
+    color: #2d2e32;
+    font-family: Poppins,sans-serif;
+    font-size: 2.5rem;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+}
+.text p {
+    color: #767676;
+    font-family: Mulish,sans-serif;
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+

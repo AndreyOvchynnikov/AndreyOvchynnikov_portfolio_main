@@ -1,0 +1,42 @@
+.nav {
+    align-items: center;
+    background-color: #fff;
+    font-size: 1.7rem;
+    box-shadow: 0 0 10px rgba(0,0,0,.09);
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    left: 0;
+    padding: 25px 40px 25px 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 200;
+}
+
+.logo {
+    color: #2d2e32;
+    cursor: pointer;
+    transition: all 0.23s;
+    &:hover,
+    &:focus {
+        color:#147efb;
+    }
+}
+
+.list {
+    display: flex;
+    gap: 2rem;
+}
+
+.link {
+    color: #2d2e32;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.23s;
+
+    &:hover,
+    &:focus {
+        color: #147efb;
+    }
+}

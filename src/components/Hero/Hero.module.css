@@ -1,0 +1,125 @@
+
+.hero {
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+}
+.content {
+    align-items: center;
+    display: flex;
+    gap: 10rem;
+    height: 65rem;
+    justify-content: center;
+    position: relative;
+}
+.main {
+    align-items: center;
+    display: flex;
+    gap: 10rem;
+    justify-content: center;
+    position: relative;
+}
+.textPart {
+    display: flex;
+    flex-direction: column;
+    max-width: 50rem;
+    position: relative;
+}
+.textPart h1 {
+    color: #2d2e32;
+    font-size: 5.5rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.textPart img {
+    height: 6rem;
+    position: absolute;
+    right: 13rem;
+    top: 8.7rem;
+    width: 6rem;
+}
+.textPart p {
+    color: #555;
+    font-family: Mulish,sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+.textPart span {
+    cursor: pointer;
+    display: flex;
+    gap: 1.3rem;
+    margin: 2.5rem 0;
+}
+.textPart span a {
+    transition: all .2s;
+    color: #2d2e32;
+    font-size: 3rem;
+
+    &:hover,
+    &:focus {
+        color: #147efb;
+    }
+}
+.imgPart {
+    animation: morph 8s ease-in-out infinite;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid #2d2e32;
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    height: 35rem;
+    position: relative;
+    transition: all 1s ease-in-out;
+    width: 35rem;
+}
+@keyframes morph {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+    100% {
+       border-radius: 60% 40% 30% 70%/60% 30% 70% 40%; 
+    }
+}
+.skills {
+    align-items: center;
+    padding-bottom: 5px;
+    bottom: 0;
+    color: #767676;
+    display: flex;
+    font-size: 1.7rem;
+    left: 0;
+    position: absolute;
+}
+.skills p {
+    border-right: 2px solid rgba(45,46,50,.5);
+    color: #2d2e32;
+    font-family: Mulish,sans-serif;
+    font-weight: 600;
+    margin-right: 7rem;
+    padding-right: 2rem;
+}
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    list-style: none;
+}
+.skills ul li {
+    cursor: pointer;
+}
+.skills ul li img {
+    height: 5rem;
+    transition: all .3s ease-in-out;
+    width: 11rem;
+}
+.skills ul li img:hover {
+    transform: translateY(-1rem);
+}
