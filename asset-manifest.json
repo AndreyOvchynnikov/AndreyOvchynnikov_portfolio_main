@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/AndreyOvchynnikov_portfolio_main/static/css/main.4b9b7adb.css",
-    "main.js": "/AndreyOvchynnikov_portfolio_main/static/js/main.ebe739d9.js",
+    "main.js": "/AndreyOvchynnikov_portfolio_main/static/js/main.afdb31e9.js",
     "static/media/cryptocoin-full.png": "/AndreyOvchynnikov_portfolio_main/static/media/cryptocoin-full.c5fef9ca2f47e52897f8.c5fef9ca2f47e52897f8.png",
     "static/media/gymate-home.webp": "/AndreyOvchynnikov_portfolio_main/static/media/gymate-home.52d00d03c15713c601c4.52d00d03c15713c601c4.webp",
     "static/media/cat__y-removebg-preview.png": "/AndreyOvchynnikov_portfolio_main/static/media/cat_5341419448013279760_y-removebg-preview.0abe507f413598807e43.png",
@@ -15,10 +15,10 @@
     "static/media/cursor.cur": "/AndreyOvchynnikov_portfolio_main/static/media/cursor.d4db4c8625767c6caf84.cur",
     "index.html": "/AndreyOvchynnikov_portfolio_main/index.html",
     "main.4b9b7adb.css.map": "/AndreyOvchynnikov_portfolio_main/static/css/main.4b9b7adb.css.map",
-    "main.ebe739d9.js.map": "/AndreyOvchynnikov_portfolio_main/static/js/main.ebe739d9.js.map"
+    "main.afdb31e9.js.map": "/AndreyOvchynnikov_portfolio_main/static/js/main.afdb31e9.js.map"
   },
   "entrypoints": [
     "static/css/main.4b9b7adb.css",
-    "static/js/main.ebe739d9.js"
+    "static/js/main.afdb31e9.js"
   ]
 }
