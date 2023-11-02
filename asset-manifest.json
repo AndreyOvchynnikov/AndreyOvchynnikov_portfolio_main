@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "/AndreyOvchynnikov_portfolio_main/static/css/main.e84a49e6.css",
-    "main.js": "/AndreyOvchynnikov_portfolio_main/static/js/main.648547d6.js",
+    "main.css": "/AndreyOvchynnikov_portfolio_main/static/css/main.cb6f68b3.css",
+    "main.js": "/AndreyOvchynnikov_portfolio_main/static/js/main.b451af01.js",
     "static/media/cryptocoin-full.png": "/AndreyOvchynnikov_portfolio_main/static/media/cryptocoin-full.c5fef9ca2f47e52897f8.c5fef9ca2f47e52897f8.png",
     "static/media/gymate-home.webp": "/AndreyOvchynnikov_portfolio_main/static/media/gymate-home.52d00d03c15713c601c4.52d00d03c15713c601c4.webp",
+    "static/media/cat__y-removebg-preview.png": "/AndreyOvchynnikov_portfolio_main/static/media/cat_5341419448013279760_y-removebg-preview.0abe507f413598807e43.png",
     "static/media/car-rental-full.webp": "/AndreyOvchynnikov_portfolio_main/static/media/car-rental-full.c58b37da333d73238fdd.c58b37da333d73238fdd.webp",
+    "static/media/photo__y-removebg-preview.png": "/AndreyOvchynnikov_portfolio_main/static/media/photo_5341349994097137799_y-removebg-preview.ce95153f55a7d9d96ab9.png",
     "static/media/ecom.webp": "/AndreyOvchynnikov_portfolio_main/static/media/ecom.f10b3cdd799be85c19da.f10b3cdd799be85c19da.webp",
     "static/media/about-img.webp": "/AndreyOvchynnikov_portfolio_main/static/media/about-img.62b47e7f183d4b4e9feb.62b47e7f183d4b4e9feb.webp",
-    "static/media/360_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ.jpg": "/AndreyOvchynnikov_portfolio_main/static/media/360_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ.77aaf5376cc1173fc38e.jpg",
     "static/media/waving.png": "/AndreyOvchynnikov_portfolio_main/static/media/waving.1bae5fcfb51082b5c2b4.1bae5fcfb51082b5c2b4.png",
     "static/media/working-emoji.png": "/AndreyOvchynnikov_portfolio_main/static/media/working-emoji.c5325f52b5be329995a5.c5325f52b5be329995a5.png",
     "static/media/text2.svg": "/AndreyOvchynnikov_portfolio_main/static/media/text2.3d5aa6ba2d0632bb4e0572631c3f9dc2.3d5aa6ba2d0632bb4e0572631c3f9dc2.svg",
+    "static/media/cursor.cur": "/AndreyOvchynnikov_portfolio_main/static/media/cursor.d4db4c8625767c6caf84.cur",
     "index.html": "/AndreyOvchynnikov_portfolio_main/index.html",
-    "main.e84a49e6.css.map": "/AndreyOvchynnikov_portfolio_main/static/css/main.e84a49e6.css.map",
-    "main.648547d6.js.map": "/AndreyOvchynnikov_portfolio_main/static/js/main.648547d6.js.map"
+    "main.cb6f68b3.css.map": "/AndreyOvchynnikov_portfolio_main/static/css/main.cb6f68b3.css.map",
+    "main.b451af01.js.map": "/AndreyOvchynnikov_portfolio_main/static/js/main.b451af01.js.map"
   },
   "entrypoints": [
-    "static/css/main.e84a49e6.css",
-    "static/js/main.648547d6.js"
+    "static/css/main.cb6f68b3.css",
+    "static/js/main.b451af01.js"
   ]
 }
