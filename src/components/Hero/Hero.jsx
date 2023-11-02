@@ -1,9 +1,29 @@
+import { useState } from 'react';
 import Container from 'components/Container';
-import photo from '../../images/360_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ.jpg';
+import catPicture from '../../images/cat_5341419448013279760_y-removebg-preview.png';
+import myPhoto from '../../images/photo_5341349994097137799_y-removebg-preview.png'
 import hand from '../../images/waving.1bae5fcfb51082b5c2b4.png';
 import s from './Hero.module.css';
 
 const Hero = () => {
+    const [picture, setPicture] = useState(catPicture);
+    const [isMyPhoto, setisMyPhoto] = useState(false);
+    const [text, setText] = useState('The one who actually writes the code. CLICK ME!!!');
+
+
+    const handleClick = () => {
+        if (isMyPhoto) {
+            setPicture(catPicture)
+            setText('The one who actually writes the code. CLICK ME!!!')
+            setisMyPhoto(!isMyPhoto)
+        } else {
+            setPicture(myPhoto)
+            setText('And this is my Human...')
+            setisMyPhoto(!isMyPhoto)
+        }
+
+    }
+
     return (
         <section id="home" className={s.hero}>
             <Container>
@@ -32,7 +52,12 @@ const Hero = () => {
                                 </a>
                             </span>
                         </div>
-                        <div className={s.imgPart} style={{backgroundImage: `url(${photo})`}}></div>
+                        <div className={s.imgPartContainer}>
+                            <div onClick={handleClick} className={s.imgPart} style={{ backgroundImage: `url(${picture})` }}>
+                        </div>
+                            <p className={s.imgText}>{text}</p>
+                        </div>
+                        
                     </div>
                     <div className={s.skills}>
                         <p>Tech Stack</p>
