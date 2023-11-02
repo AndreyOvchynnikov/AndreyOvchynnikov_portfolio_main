@@ -186,3 +186,29 @@
     justify-content: center;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .textPart h1 {
+    font-size: 4rem;
+    }
+    .textPart img {
+    height: 4.5rem;
+    right: 4rem;
+    top: 6.4rem;
+    width: 4.5rem;
+    }
+    .imgPart {
+    height: 28rem;
+    width: 28rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    .textPart img {
+    right: 3rem;
+    }
+}
+@media screen and (max-width: 375px) {
+    .textPart img {
+    right: 1.7rem;
+    }
+}

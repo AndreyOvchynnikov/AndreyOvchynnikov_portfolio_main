@@ -113,5 +113,17 @@
     display: none;
     } 
 }
+@media screen and (max-width: 460px) {
+    .mainImage {
+    height: auto;
+    width: 90%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .text {
+    padding-right: 0;
+    }
+    
+}
 
 

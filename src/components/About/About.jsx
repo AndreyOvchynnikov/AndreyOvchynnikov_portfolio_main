@@ -18,7 +18,7 @@ const About = () => {
                     </div>
                     <div className={s.text}>
                         <h3>About me</h3>
-                        <h4>A dedicated Front-end Developer based in Belgrade, Serbia 📍
+                        <h4>A dedicated Front-end Developer based in Kyiv, Ukraine 📍
                         </h4>
                         <p> As a Junior Front-End Developer,
                             I possess an impressive arsenal of skills in
