@@ -1,3 +1,4 @@
+import { IconBrandGithub, IconExternalLink } from "@tabler/icons-react";
 import carRental from '../../images/car-rental-full.c58b37da333d73238fdd.webp';
 import cryptoCoin from '../../images/cryptocoin-full.c5fef9ca2f47e52897f8.png';
 import gymate from '../../images/gymate-home.52d00d03c15713c601c4.webp';
@@ -14,7 +15,7 @@ const Projects = () => {
                     <h3>Each project is a unique piece of development 🧩</h3>
                     <ul className={s.list}>
                         <li className={s.item}>
-                            <a target="_blank" href="#home" rel="noreferrer" className={s.projectLink}>
+                            <a href="#home" rel="noreferrer" className={s.projectLink}>
                                 <img src={carRental} alt="website" className={s.project1} />
                             </a>
                             <div className={s.text}>
@@ -34,25 +35,19 @@ const Projects = () => {
                                 <ul className={s.links}>
                                     <li>
                                         <a target="_blank" href="#home" rel="noreferrer">Code
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                                <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
-                                            </svg>
+                                            <IconBrandGithub />
                                         </a>
                                     </li>
                                     <li>
                                         <a target="_blank" href="#home" rel="noreferrer">Live Demo
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                            <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6"></path>
-                                            <path d="M11 13l9 -9"></path>
-                                            <path d="M15 4h5v5"></path>
-                                        </svg>
+                                        <IconExternalLink />
                                         </a>
                                     </li>                                       
                                 </ul>
                             </div>
                         </li>
                         <li className={s.reverseItem}>
-                            <a target="_blank" href="#home" rel="noreferrer" className={s.projectLink}>
+                            <a href="#home" rel="noreferrer" className={s.projectLink}>
                                 <img src={cryptoCoin} alt="website" className={s.project2}/>
                             </a>
                             <div className={s.text}>
@@ -72,25 +67,19 @@ const Projects = () => {
                                 <ul className={s.links}>
                                     <li>
                                         <a target="_blank" href="#home" rel="noreferrer">Code
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                                <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
-                                            </svg>
+                                            <IconBrandGithub />
                                         </a>
                                     </li>
                                     <li>
                                         <a target="_blank" href="#home" rel="noreferrer">Live Demo
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                            <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6"></path>
-                                            <path d="M11 13l9 -9"></path>
-                                            <path d="M15 4h5v5"></path>
-                                        </svg>
+                                        <IconExternalLink />
                                         </a>
-                                    </li> 
+                                    </li>                                       
                                 </ul>
                             </div>
                         </li>
                         <li className={s.item}>
-                            <a target="_blank" href="#home" rel="noreferrer" className={s.projectLink}>
+                            <a href="#home" rel="noreferrer" className={s.projectLink}>
                                 <img src={gymate} alt="website" className={s.project3}/>
                             </a>
                             <div className={s.text}>
@@ -110,25 +99,19 @@ const Projects = () => {
                                 <ul className={s.links}>
                                     <li>
                                         <a target="_blank" href="#home" rel="noreferrer">Code
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                                <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
-                                            </svg>
+                                            <IconBrandGithub />
                                         </a>
                                     </li>
                                     <li>
                                         <a target="_blank" href="#home" rel="noreferrer">Live Demo
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                            <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6"></path>
-                                            <path d="M11 13l9 -9"></path>
-                                            <path d="M15 4h5v5"></path>
-                                        </svg>
+                                        <IconExternalLink />
                                         </a>
-                                    </li> 
+                                    </li>                                       
                                 </ul>
                             </div>
                         </li>
                         <li className={s.reverseItem}>
-                            <a target="_blank" href="#home" rel="noreferrer" className={s.projectLink}>
+                            <a href="#home" rel="noreferrer" className={s.projectLink}>
                                 <img src={ecommerse} alt="website" className={s.project4}/>
                             </a>
                             <div className={s.text}>
@@ -149,20 +132,14 @@ const Projects = () => {
                                 <ul className={s.links}>
                                     <li>
                                         <a target="_blank" href="#home" rel="noreferrer">Code
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                                <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
-                                            </svg>
+                                            <IconBrandGithub />
                                         </a>
                                     </li>
                                     <li>
                                         <a target="_blank" href="#home" rel="noreferrer">Live Demo
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                            <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6"></path>
-                                            <path d="M11 13l9 -9"></path>
-                                            <path d="M15 4h5v5"></path>
-                                        </svg>
+                                        <IconExternalLink />
                                         </a>
-                                    </li> 
+                                    </li>                                       
                                 </ul>
                             </div>
                         </li>

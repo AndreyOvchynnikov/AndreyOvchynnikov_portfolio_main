@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { IconMenu2 } from "@tabler/icons-react";
 import MobileMenu from '../MobileMenu';
 import s from './Header.module.css';
  
@@ -28,11 +29,7 @@ const Header = () => {
                         </li>
                         <li>
                             <button type="button" className={s.mobileMenubtn} onClick={handleClick}>
-                                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                    <path d="M4 6l16 0"></path>
-                                    <path d="M4 12l16 0"></path>
-                                    <path d="M4 18l16 0"></path>
-                                </svg>
+                                <IconMenu2 width={30} height={30} />
                             </button>
                         </li>
                     </ul>
