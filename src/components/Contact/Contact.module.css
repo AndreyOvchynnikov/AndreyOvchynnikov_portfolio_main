@@ -60,3 +60,22 @@
     color: #147efb;   
     }
 }
+@media screen and (max-width: 1020px) {
+    .section {
+    padding: 8rem 0;
+    }
+}
+@media screen and (max-width: 750px) {
+    .title {
+    text-align: center;
+    }
+    .icons {
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
+    text-align: center;
+    }
+    .iconBox {
+    flex-direction: column;
+    }  
+}

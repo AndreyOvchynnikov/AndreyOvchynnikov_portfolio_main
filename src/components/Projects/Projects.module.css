@@ -143,3 +143,31 @@
         
 }
 
+@media screen and (max-width: 1020px) {
+    .section {
+    padding: 8rem 0;
+    }
+    .item,
+    .reverseItem {
+    flex-direction: column!important;
+    gap: 3rem;
+    height: 75rem;
+    margin: 0 auto;
+    width: fit-content;
+    }
+    .text {
+    margin: 0 auto;
+    }
+}
+@media screen and (max-width: 650px) {
+    .projectLink {
+    width: 100%;
+}
+}
+@media screen and (max-width: 600px) {
+    .content {
+    text-align: center;
+    }
+}
+
+

@@ -132,7 +132,7 @@ const Projects = () => {
                                 <img src={ecommerse} alt="website" className={s.project4}/>
                             </a>
                             <div className={s.text}>
-                                <h3>Ecommerce <span className={s.date}>(2022)</span> 🛒</h3>
+                                <h3>Ecommerce <span className={s.date}>(2023)</span> 🛒</h3>
                                 <p> With a focus on simplicity and clean design,
                                     this store prioritize user experience,
                                     making it easy for customers to find and purchase

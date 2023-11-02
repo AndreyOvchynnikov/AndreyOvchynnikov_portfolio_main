@@ -6,6 +6,7 @@
     height: 100vh;
     position: relative;
     width: 100%;
+    margin: 0;
 }
 .content {
     align-items: center;
@@ -122,4 +123,51 @@
 }
 .skills ul li img:hover {
     transform: translateY(-1rem);
+}
+
+
+@media screen and (max-width: 900px) {
+    .hero {
+    height: auto;
+    padding: 11rem 0;
+    }
+    .content {
+    flex-direction: column;
+    gap: 3rem;
+    height: auto;
+    text-align: center;
+    }
+    .main {
+    flex-direction: column-reverse;
+    gap: 3rem;
+    height: auto;
+    text-align: center;
+    }
+    .textPart img {
+    right: 3rem;
+    }
+    .textPart p {
+    margin-bottom: 5rem;
+    }
+    .textPart span {
+    gap: 1.6rem;
+    justify-content: center;
+    margin-bottom: 4rem;
+    margin-top: -2rem;
+    }
+    .skills {
+    flex-direction: column;
+    position: static;
+    }
+    .skills p {
+    border-bottom: 2px solid rgba(45,46,50,.5);
+    border-right: none;
+    margin-bottom: 3rem;
+    margin-right: 0;
+    padding-bottom: 1rem;
+    padding-right: 0;
+    }
+    .skills ul {
+    justify-content: center;
+    }
 }

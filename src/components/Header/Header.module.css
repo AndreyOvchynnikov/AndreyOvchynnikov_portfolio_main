@@ -1,4 +1,4 @@
-.nav {
+.header {
     align-items: center;
     background-color: #fff;
     font-size: 1.7rem;
@@ -38,5 +38,22 @@
     &:hover,
     &:focus {
         color: #147efb;
+    }
+}
+.mobileMenubtn {
+    cursor: pointer;
+    display: none;
+    font-size: 2.3rem;
+}
+
+@media screen and (max-width: 900px)  {
+    .link {
+    display: none;
+    }
+    .mobileMenubtn {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    padding: 0;
     }
 }

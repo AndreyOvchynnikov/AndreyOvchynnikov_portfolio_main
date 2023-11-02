@@ -1,4 +1,4 @@
-import Navigation from "./Navigation";
+import Header from "./Header";
 import Hero from "./Hero";
 import About from "./About";
 import Projects from "./Projects";
@@ -9,16 +9,12 @@ import Footer from "./Footer";
 export const App = () => {
   return (
     <>
-      <Navigation />
-      <main>
+      <Header />
         <Hero />
         <About />
         <Projects />
         <Contact />
-      </main>
       <Footer />
-    </>
-    
-      
+    </>   
   );
 };
