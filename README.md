@@ -1,4 +1,4 @@
-Hi! My name is Andery Ovchynnikov 😄
+Hi! My name is Andrey Ovchynnikov 😄
 ========================================================================================================================================
 
 🌍  I am a Front-End Developer based in Kyiv, Ukraine.
