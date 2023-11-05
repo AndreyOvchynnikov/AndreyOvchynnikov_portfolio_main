@@ -27,14 +27,12 @@ const Contact = () => {
                             </span>
                             <div className={s.info}>
                                 <h3>Mail</h3>
-                                <a href="mailto:andrey272015@gmail.com">andrey272015@gmail.com</a>
+                                <a href="mailto:andrey272015@meta.ua">andrey272015@meta.ua</a>
                             </div>
                         </li>
                     </ul>
                 </div>
-            </Container>
-                
-            
+            </Container>    
         </section>
     )
 }
