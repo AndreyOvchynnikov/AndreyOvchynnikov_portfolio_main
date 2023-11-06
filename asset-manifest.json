@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/AndreyOvchynnikov_portfolio_main/static/css/main.4b9b7adb.css",
-    "main.js": "/AndreyOvchynnikov_portfolio_main/static/js/main.72ae7abe.js",
+    "main.js": "/AndreyOvchynnikov_portfolio_main/static/js/main.68cd7abd.js",
     "static/media/cat__y-removebg-preview.png": "/AndreyOvchynnikov_portfolio_main/static/media/cat_5341419448013279760_y-removebg-preview.0abe507f413598807e43.png",
     "static/media/car-rental-full.webp": "/AndreyOvchynnikov_portfolio_main/static/media/car-rental-full.c58b37da333d73238fdd.c58b37da333d73238fdd.webp",
     "static/media/photo_resume.png": "/AndreyOvchynnikov_portfolio_main/static/media/photo_resume.7e4f54c23be0e4513461.png",
@@ -13,10 +13,10 @@
     "static/media/cursor.cur": "/AndreyOvchynnikov_portfolio_main/static/media/cursor.d4db4c8625767c6caf84.cur",
     "index.html": "/AndreyOvchynnikov_portfolio_main/index.html",
     "main.4b9b7adb.css.map": "/AndreyOvchynnikov_portfolio_main/static/css/main.4b9b7adb.css.map",
-    "main.72ae7abe.js.map": "/AndreyOvchynnikov_portfolio_main/static/js/main.72ae7abe.js.map"
+    "main.68cd7abd.js.map": "/AndreyOvchynnikov_portfolio_main/static/js/main.68cd7abd.js.map"
   },
   "entrypoints": [
     "static/css/main.4b9b7adb.css",
-    "static/js/main.72ae7abe.js"
+    "static/js/main.68cd7abd.js"
   ]
 }
