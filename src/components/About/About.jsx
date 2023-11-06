@@ -20,16 +20,13 @@ const About = () => {
                         <h3>About me</h3>
                         <h4>A Front-end Developer based in Kyiv, Ukraine 📍
                         </h4>
-                        <p> As a Junior Front-End Developer, I possess an impressive arsenal of skills in
-                        HTML, CSS,
-                        JavaScript,
-                        React, Redux, and
-                        SCSS. I excel in designing responsive websites.
-                        My expertise lies in
-                        crafting dynamic, engaging interfaces through writing clean and optimized code and utilizing
-                        cutting-edge development
-                        tools and techniques. I am also a team player who thrives in collaborating with cross-functional
-                        teams.
+                        <p> As a junior front-end developer,
+                        I possess an impressive knowledge of HTML, CSS, JavaScript, React, Redux, and SCSS.
+                        My expertise lies in designing responsive websites with
+                        an intuitive UI using cutting-edge development tools and
+                        techniques. I always ensure that my code is clean and optimized.
+                        I am a team player and easily collaborate with
+                        colleagues from other departments.
                         </p>
                     </div>
                 </div>
