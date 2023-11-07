@@ -18,9 +18,9 @@ const Projects = () => {
                             </a>
                             <div className={s.text}>
                                 <h3>Ecommerce <span className={s.date}>(2023)</span> 🛒</h3>
-                                <p> With a focus on simplicity and clean design,
-                                    this store prioritize user experience,
-                                    making it easy for customers to find and purchase
+                                <p> A web store with a simple and clean design.
+                                    I've made user experience a priority so
+                                    customers could easily find and purchase
                                     the products they need.
                                 </p>
                                 <ul className={s.stack}>
@@ -51,9 +51,10 @@ const Projects = () => {
                             </a>
                             <div className={s.text}>
                                 <h3>Car Rental <span className={s.date}>(2023)</span> 🚗</h3>
-                                <p> A car rental website is an online platform that allows users
-                                    to rent cars for personal or business use. The website provides
-                                    an interface for searching, comparing, and reserving cars.
+                                <p> An online platform where users can rent cars
+                                    for personal or business use.
+                                    The website provides functionality
+                                    for searching, comparing, and reserving cars.
                                 </p>
                                 <ul className={s.stack}>
                                     <li>

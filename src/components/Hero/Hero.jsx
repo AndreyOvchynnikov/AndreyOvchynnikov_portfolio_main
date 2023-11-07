@@ -15,15 +15,28 @@ const Hero = () => {
     const handleClick = () => {
         if (isMyPhoto) {
             setPicture(catPicture)
-            setText('The one who actually writes this code. CLICK ME!!!')
+            setText('The one who actually writes the code. ')
             setisMyPhoto(!isMyPhoto)
         } else {
             setPicture(myPhoto)
-            setText('And this is my Human...')
+            setText('And this is my Human😜')
             setisMyPhoto(!isMyPhoto)
         }
 
     }
+
+    const styleChange = () => {
+        let colorStyle = '#2d2e32';
+        let padding = '0';
+        if (isMyPhoto) {
+            colorStyle = 'transparent';
+            padding = '60px';  
+        }
+        return [colorStyle, padding]
+    }
+
+    const [colorStyle, padding] = styleChange();
+
 
     return (
         <section id="home" className={s.hero}>
@@ -49,7 +62,7 @@ const Hero = () => {
                         <div className={s.imgPartContainer}>
                             <div onClick={handleClick} className={s.imgPart} style={{ backgroundImage: `url(${picture})` }}>
                         </div>
-                            <p className={s.imgText}>{text}</p>
+                            <p className={s.imgText}>{text}<span style={{ color: `${colorStyle}`, paddingLeft: `${padding}`}}>CLICK ME!!!</span></p>
                         </div>
                         
                     </div>
