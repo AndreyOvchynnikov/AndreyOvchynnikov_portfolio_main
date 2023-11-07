@@ -9,7 +9,7 @@ import s from './Hero.module.css';
 const Hero = () => {
     const [picture, setPicture] = useState(catPicture);
     const [isMyPhoto, setisMyPhoto] = useState(false);
-    const [text, setText] = useState('The one who actually writes the code. CLICK ME!!!');
+    const [text, setText] = useState('The one who actually writes the code. ');
 
 
     const handleClick = () => {
