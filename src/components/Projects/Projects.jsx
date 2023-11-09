@@ -13,7 +13,7 @@ const Projects = () => {
                     <h3>Each project is a unique piece of development 🧩</h3>
                     <ul className={s.list}>
                         <li className={s.reverseItem}>
-                            <a href="#home" rel="noreferrer" className={s.projectLink}>
+                            <a href="https://andreyovchynnikov.github.io/ecommerce/" rel="noreferrer" className={s.projectLink}>
                                 <img src={ecommerse} alt="website" className={s.project4}/>
                             </a>
                             <div className={s.text}>
