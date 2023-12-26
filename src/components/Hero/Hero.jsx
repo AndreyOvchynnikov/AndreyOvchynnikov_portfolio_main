@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { IconBrandGithub } from "@tabler/icons-react";
+import { IconBrandGithub, IconBrandLinkedin } from "@tabler/icons-react";
 import Container from 'components/Container';
 import catPicture from '../../images/cat_5341419448013279760_y-removebg-preview.png';
 import myPhoto from '../../images/photo_resume.png'
@@ -50,10 +50,10 @@ const Hero = () => {
                                 A passionate Front-end Developer based in Kyiv, Ukraine. 📍
                             </p>
                             <span>
-                                {/* <a aria-label="linkedin" rel="noreferrer" target="_blank"
+                                <a aria-label="linkedin" rel="noreferrer" target="_blank"
                                     href="https://www.linkedin.com/in/andrey-ovchynnikov-881026299">
                                     <IconBrandLinkedin width={32} height={32}/>
-                                </a> */}
+                                </a>
                                 <a aria-label="github" rel="noreferrer" target="_blank" href="https://github.com/AndreyOvchynnikov">
                                     <IconBrandGithub width={32} height={32}/>
                                 </a>

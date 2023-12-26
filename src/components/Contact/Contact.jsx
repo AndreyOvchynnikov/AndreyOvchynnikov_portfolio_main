@@ -18,7 +18,7 @@ const Contact = () => {
                             </span>
                             <div className={s.info}>
                                 <h3>Location</h3>
-                                <p>Kyiv, Ukraine</p>
+                                <a href="https://maps.app.goo.gl/PDGRw8oEE7rWZejNA">Kyiv, Ukraine</a>
                             </div>
                         </li>
                         <li className={s.iconBox}>
