@@ -1,3 +1,5 @@
+import { useEffect, useRef, useState } from "react";
+import { useInView } from 'react-intersection-observer';
 import { IconBrandGithub, IconExternalLink } from "@tabler/icons-react";
 import carRental from '../../images/car-rental-full.c58b37da333d73238fdd.webp';
 import ecommerse from '../../images/ecom.f10b3cdd799be85c19da.webp';
@@ -5,16 +7,57 @@ import Container from 'components/Container';
 import s from './Projects.module.css';
 
 const Projects = () => {
+
+    const firstProject = useRef();
+    const firstProjectImg = useRef();
+    const [heightFirstProject, setHeightFirstProject] = useState("");
+
+    const secondProject = useRef();
+    const secondProjectImg = useRef();
+    const [heightSecondProject, setHeightSecondProject] = useState("");
+
+    useEffect(() => {
+        setHeightFirstProject(firstProject.current.getBoundingClientRect().height);
+    }, [heightFirstProject]);
+
+
+    useEffect(() => {
+        setHeightSecondProject(secondProject.current.getBoundingClientRect().height);
+    }, [heightSecondProject]);
+
+    
+    const handleMouseOver = (project, projectHeightState) => {
+        project.current.style.transform = `translateY(calc(-100% + ${projectHeightState}px))`;
+    };
+
+    const handleMouseOut = (project) => {
+        project.current.style.transform = "";
+    };
+
+    const { ref: sectionTitle, inView: sectionTitleIsVisible } = useInView({
+        triggerOnce: true,
+        rootMargin: '-100px 0px',
+    });
+
     return (
         <section id="projects" className={s.section}>
             <Container>
-                <div className={s.content}>
-                    <p>portfolio</p>
-                    <h3>Each project is a unique piece of development 🧩</h3>
+                <div className={s.content} ref={sectionTitle}>
+                    <p className={sectionTitleIsVisible? s.sectionTextAnim : s.sectionText}>portfolio</p>
+                    <h3 className={sectionTitleIsVisible? s.sectionTitleAnim : s.sectionTitle}>Each project is a unique piece of development 🧩</h3>
                     <ul className={s.list}>
                         <li className={s.item}>
-                            <a href="https://andreyovchynnikov.github.io/carrental/" rel="noreferrer" className={s.projectLink}>
-                                <img src={carRental} alt="website" className={s.project1} />
+                            <a href="https://andreyovchynnikov.github.io/carrental/"
+                                ref={firstProject}
+                                rel="noreferrer"
+                                className={s.projectLink}
+                            >
+                                <img src={carRental} alt="website"
+                                    className={s.project1}
+                                    ref={firstProjectImg}
+                                    onMouseOver={() => handleMouseOver(firstProjectImg, heightFirstProject)}
+                                    onMouseOut={() => handleMouseOut(firstProjectImg)}
+                                />
                             </a>
                             <div className={s.text}>
                                 <h3>Car Rental <span className={s.date}>(December 2023)</span> 🚗</h3>
@@ -33,12 +76,22 @@ const Projects = () => {
                                 </ul>
                                 <ul className={s.links}>
                                     <li>
-                                        <a target="_blank" href="https://github.com/AndreyOvchynnikov/carrental" rel="noreferrer">Code
+                                        <a
+                                            target="_blank"
+                                            href="https://github.com/AndreyOvchynnikov/carrental"
+                                            rel="noreferrer"
+                                        >
+                                            Code
                                             <IconBrandGithub />
                                         </a>
                                     </li>
                                     <li>
-                                        <a target="_blank" href="https://andreyovchynnikov.github.io/carrental/" rel="noreferrer">Live Demo
+                                        <a
+                                            target="_blank"
+                                            href="https://andreyovchynnikov.github.io/carrental/"
+                                            rel="noreferrer"
+                                        >
+                                            Live Demo
                                             <IconExternalLink />
                                         </a>
                                     </li>
@@ -46,8 +99,17 @@ const Projects = () => {
                             </div>
                         </li>
                         <li className={s.reverseItem}>
-                            <a href="https://andreyovchynnikov.github.io/ecommerce/" rel="noreferrer" className={s.projectLink}>
-                                <img src={ecommerse} alt="website" className={s.project2} />
+                            <a href="https://andreyovchynnikov.github.io/ecommerce/"
+                                rel="noreferrer"
+                                className={s.projectLink}
+                                ref={secondProject}
+                            >
+                                <img src={ecommerse} alt="website"
+                                    className={s.project2}
+                                    ref={secondProjectImg}
+                                    onMouseOver={() => handleMouseOver(secondProjectImg, heightSecondProject)}
+                                    onMouseOut={() => handleMouseOut(secondProjectImg)}
+                                />
                             </a>
                             <div className={s.text}>
                                 <h3>Ecommerce <span className={s.date}>(November 2023)</span> 🛒</h3>

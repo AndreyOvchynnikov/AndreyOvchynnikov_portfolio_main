@@ -8,9 +8,31 @@
     grid-template-columns: 1fr 1fr;
     justify-content: center;
 }
+
 .image {
     position: relative;
+    opacity: 0;
+    transform: translateX(-50%);
 }
+
+.imageAnimated {
+    position: relative;
+    opacity: 0;
+    transform: translateX(-50%);
+    animation: gotoright 2s forwards;
+}
+
+@keyframes gotoright {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 .emoji {
     bottom: 35px;
     position: absolute;
@@ -23,7 +45,7 @@
     height: 35rem;
     width: 41rem;
 }
-.image span {
+.imageAnimated span {
     background-color: #fff;
     border-radius: 50%;
     bottom: -33px;
@@ -32,7 +54,7 @@
     right: 33px;
     width: 19rem;
 }
-.image span img {
+.imageAnimated span img {
     animation: rotate 9s linear infinite;
     width: 19rem;
 }
@@ -41,24 +63,49 @@
         transform: rotate(1turn);
     }
 }
+
+.textContainer {
+    overflow: hidden;
+}
 .text {
     padding-right: 1.5rem;
+    opacity: 0;
+    transform: translateX(50%);
 }
-.text h3 {
+
+.textAnimated {
+    padding-right: 1.5rem;
+    opacity: 0;
+    transform: translateX(50%);
+    animation: gotoleft 2s forwards; 
+}
+
+@keyframes gotoleft {
+    0% {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.textAnimated h3 {
     color: #147efb;
     font-size: 1.7rem;
     font-weight: 700;
     margin-bottom: 1rem;
     text-transform: uppercase;
 }
-.text h4 {
+.textAnimated h4 {
     color: #2d2e32;
     font-family: Poppins,sans-serif;
     font-size: 2.5rem;
     line-height: 1.4;
     margin-bottom: 2rem;
 }
-.text p {
+.textAnimated p {
     color: #767676;
     font-family: Mulish,sans-serif;
     font-size: 1.7rem;
@@ -80,16 +127,16 @@
     .mainImage {
     margin-bottom: 3.5rem;
     }
-    .image span {
+    .imageAnimated span {
     bottom: -3px;
     height: 17rem;
     right: 190px;
     width: 17rem;
     }
-    .image span img {
+    .imageAnimated span img {
     width: 17rem;
     }
-    .text {
+    .textAnimated {
     margin: 0 auto;
     max-width: 54rem;
     }  
@@ -100,7 +147,7 @@
     bottom: 57px;
     right: 156px;
     }
-    .image span {
+    .imageAnimated span {
     bottom: -3px;
     right: 100px;
     }  
@@ -109,7 +156,7 @@
     .emoji {
         display: none;
     }
-    .image span {
+    .imageAnimated span {
     display: none;
     } 
 }
@@ -120,7 +167,7 @@
     }
 }
 @media screen and (max-width: 400px) {
-    .text {
+    .textAnimated {
     padding-right: 0;
     }
     

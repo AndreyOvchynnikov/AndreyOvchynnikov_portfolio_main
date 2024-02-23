@@ -15,6 +15,16 @@
     height: 65rem;
     justify-content: center;
     position: relative;
+   
+}
+
+@keyframes appearance {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 .main {
     align-items: center;
@@ -22,6 +32,8 @@
     gap: 10rem;
     justify-content: center;
     position: relative;
+    opacity: 0;
+    animation: appearance 3s forwards;
 }
 .textPart {
     display: flex;
@@ -36,13 +48,30 @@
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
+
 .textPart img {
     height: 6rem;
     position: absolute;
     right: 13rem;
     top: 8.7rem;
     width: 6rem;
+    animation: hello 2s infinite;
+    transform-origin: bottom right;
 }
+
+@keyframes hello {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
 .textPart p {
     color: #555;
     font-family: Mulish,sans-serif;
@@ -70,6 +99,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 .imgPart {
     animation: morph 8s ease-in-out infinite;
@@ -99,7 +129,7 @@
 .imgText {
     color: #2d2e32;
     font-family: Mulish,sans-serif;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.6;
     text-align: center;
@@ -131,6 +161,43 @@
 .skills ul li {
     cursor: pointer;
 }
+
+
+.skillsFisrstItem,
+.skillsSecondItem,
+.skillsThirdItem {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.skillsFirstItemAnim,
+.skillsSecondItemAnim,
+.skillsThirdItemAnim {
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: cascade 0.75s forwards;
+}
+
+.skillsSecondItemAnim {
+    animation-delay: 0.5s;
+}
+.skillsThirdItemAnim {
+    animation-delay: 1s;
+}
+
+@keyframes cascade {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+    
+}
+
 .skills ul li img {
     height: 5rem;
     transition: all .3s ease-in-out;

@@ -6,17 +6,64 @@
     display: flex;
     flex-direction: column;
 }
-.title p {
+.title {
+    overflow: hidden;
+}
+
+.contactText {
+    opacity: 0;
+    transform: translateX(50%);
+}
+
+.contactTextAnim {
+    opacity: 0;
+    transform: translateX(50%);
     color: #147efb;
     font-size: 1.7rem;
     font-weight: 700;
     margin-bottom: 1rem;
     text-transform: uppercase;
+    animation: gotoleft 2s forwards;
 }
-.title h3 {
+
+@keyframes gotoleft {
+    0% {
+       opacity: 0;
+       transform: translateX(50%); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); 
+    }
+}
+
+.contactTitle {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  width: 0; 
+}
+
+.contactTitleAnim {
     color: #2d2e32;
     font-size: 2.5rem;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: 0;
+    animation: typing 2s steps(40,end) forwards;
 }
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+        border: 0;
+    }
+}
+
 .icons {
     display: flex;
     flex-wrap: wrap;

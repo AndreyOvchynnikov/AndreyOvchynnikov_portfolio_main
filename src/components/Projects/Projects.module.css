@@ -6,18 +6,58 @@
     display: flex;
     flex-direction: column;
 }
-.content p {
+.sectionText { 
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+.sectionTextAnim {
     color: #147efb;
+    opacity: 0;
+    transform: translateY(-100%);
     font-size: 1.7rem;
     font-weight: 700;
     margin-bottom: 1rem;
     text-transform: uppercase;
+    animation: gotodown 3s forwards;
 }
-.content h3 {
+
+@keyframes gotodown {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+
+.sectionTitle {
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+.sectionTitleAnim {
     color: #2d2e32;
     font-size: 2.5rem;
     margin-bottom: 6rem;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: gotoup 3s forwards;
 }
+
+@keyframes gotoup {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    } 
+}
+
 .list {
     grid-gap: 5rem;
     display: grid;
@@ -47,6 +87,7 @@
     height: 40rem;
     padding: 2rem;
 }
+
 .projectLink {
     background-color: hsla(0,0%,46%,.2);
     border-radius: 1.7rem;
@@ -59,16 +100,8 @@
  .projectLink img {
     height: auto;
     width: 100%;
-    transition: transform 5s ease-in-out 0s;
-      
+    transition: transform 10s ease-in-out 0s;   
 }
-.project1:hover {
-    transform: translateY(-83%); 
-}
-.project2:hover {
-    transform: translateY(-70%); 
-}
-
 
 .text {
     display: flex;
@@ -122,6 +155,8 @@
     align-items: center;
     margin-top: 3rem;
 }
+
+
 .links a {
     display: flex;
     align-items: center;
@@ -130,12 +165,28 @@
     font-weight: 500;
     gap: 5px;
     text-decoration: none;
-    transition: all 0.23s; 
+    transition: all 0.23s;
+    animation: scale 4s infinite; 
         
     &:hover {
         color:#147efb;
         }
         
+}
+
+@keyframes scale {
+    0% {
+        scale: 1;
+        color: #2d2e32;
+    }
+    50% {
+        scale: 1.05;
+        color: #147efb;
+    }
+    100% {
+       scale: 1;
+        color: #2d2e32; 
+    }
 }
 
 @media screen and (max-width: 1020px) {
