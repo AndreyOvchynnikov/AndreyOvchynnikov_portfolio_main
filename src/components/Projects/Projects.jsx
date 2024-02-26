@@ -123,7 +123,7 @@ const Projects = () => {
                                         <p>React</p>
                                     </li>
                                     <li>
-                                        <p>Vanilla CSS</p>
+                                        <p>SASS</p>
                                     </li>
                                 </ul>
                                 <ul className={s.links}>
