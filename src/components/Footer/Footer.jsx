@@ -9,11 +9,11 @@ const Footer = () => {
                     <div className={s.content}>
                         <h3>Copyright &copy; {new Date().getFullYear()}. All rights are reserved</h3>
                         <ul className={s.socials}>
-                            <li>
+                            {/* <li>
                                 <a aria-label="linkedin" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/andrey-ovchynnikov-881026299">
                                      <IconBrandLinkedin width={30} height={30} />
                                 </a>
-                            </li>
+                            </li> */}
                             <li>
                                 <a aria-label="github" target="_blank" rel="noreferrer" href="https://github.com/AndreyOvchynnikov">
                                    <IconBrandGithub width={30} height={30} />

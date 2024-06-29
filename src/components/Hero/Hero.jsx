@@ -44,10 +44,10 @@ const Hero = () => {
                                 A passionate Front-end Developer based in Kyiv, Ukraine. 📍
                             </p>
                             <span>
-                                <a aria-label="linkedin" rel="noreferrer" target="_blank"
+                                {/* <a aria-label="linkedin" rel="noreferrer" target="_blank"
                                     href="https://www.linkedin.com/in/andrey-ovchynnikov-881026299">
                                     <IconBrandLinkedin width={32} height={32} />
-                                </a>
+                                </a> */}
                                 <a aria-label="github" rel="noreferrer" target="_blank" href="https://github.com/AndreyOvchynnikov">
                                     <IconBrandGithub width={32} height={32} />
                                 </a>
