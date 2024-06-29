@@ -1,5 +1,8 @@
 import { useState } from 'react';
-import { IconBrandGithub, IconBrandLinkedin } from "@tabler/icons-react";
+import {
+    IconBrandGithub,
+    // IconBrandLinkedin
+} from "@tabler/icons-react";
 import { useInView } from 'react-intersection-observer';
 import Container from 'components/Container';
 import catPicture from '../../images/cat_5341419448013279760_y-removebg-preview.png';
